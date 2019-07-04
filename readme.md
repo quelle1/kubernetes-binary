@@ -1,0 +1,1 @@
+下载kubernetes二进制文件
