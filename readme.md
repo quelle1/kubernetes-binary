@@ -1,1 +1,3 @@
-下载kubernetes二进制文件
+kubernetes二进制文件下载及镜像仓库下载；
+
+kubernetes v1.14.4的镜像
