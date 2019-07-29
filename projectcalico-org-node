@@ -1,0 +1,1 @@
+FROM gcr.io/projectcalico-org/node:v3.3.1

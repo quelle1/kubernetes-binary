@@ -16,6 +16,7 @@ docker tag quelle/kubernetes-dashboard-amd64:v1.10.1 k8s.gcr.io/kubernetes-dashb
 docker tag quelle/pause:3.1 k8s.gcr.io/pause:3.1
 docker tag quelle/k8setcd:3.3.10 k8s.gcr.io/etcd:3.3.10
 docker tag quelle/coredns:1.3.1 k8s.gcr.io/coredns:1.3.1
+
 ```
 
 ```bash
@@ -28,3 +29,9 @@ k8s.gcr.io/etcd:3.3.10
 k8s.gcr.io/coredns:1.3.1
 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 ```
+
+gcr.io/projectcalico-org/node:v3.3.1
+gcr.io/projectcalico-org/cni:v3.3.1
+
+k8s.gcr.io/cpvpa-amd64:v0.6.0
+k8s.gcr.io/nvidia-gpu-device-plugin@sha256:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
