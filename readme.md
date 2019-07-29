@@ -12,11 +12,18 @@ docker pull quelle/kubernetes-dashboard-amd64:v1.10.1
 docker pull quelle/pause:3.1
 docker pull quelle/k8setcd:3.3.10
 docker pull quelle/coredns:1.3.1
+docker pull quelle/projectcalico-org-cni:v3.3.1
+docker pull quelle/cpvpa-amd64:v0.6.0
+docker pull quelle/projectcalico-org-node:v3.3.1
+docker pull quelle/nvidia-gpu-device-plugin:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
 docker tag quelle/kubernetes-dashboard-amd64:v1.10.1 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 docker tag quelle/pause:3.1 k8s.gcr.io/pause:3.1
 docker tag quelle/k8setcd:3.3.10 k8s.gcr.io/etcd:3.3.10
 docker tag quelle/coredns:1.3.1 k8s.gcr.io/coredns:1.3.1
-
+docker tag quelle/projectcalico-org-cni:v3.3.1  gcr.io/projectcalico-org/cni:v3.3.1
+docker tag quelle/cpvpa-amd64:v0.6.0 k8s.gcr.io/cpvpa-amd64:v0.6.0
+docker tag quelle/projectcalico-org-node:v3.3.1 gcr.io/projectcalico-org/node:v3.3.1
+docker tag quelle/nvidia-gpu-device-plugin:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4 k8s.gcr.io/nvidia-gpu-device-plugin@sha256:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
 ```
 
 ```bash
@@ -32,6 +39,5 @@ k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 
 gcr.io/projectcalico-org/node:v3.3.1
 gcr.io/projectcalico-org/cni:v3.3.1
-
 k8s.gcr.io/cpvpa-amd64:v0.6.0
 k8s.gcr.io/nvidia-gpu-device-plugin@sha256:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
