@@ -26,9 +26,15 @@ docker tag quelle/projectcalico-org-node:v3.3.1 gcr.io/projectcalico-org/node:v3
 docker tag quelle/nvidia-gpu-device-plugin:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4 k8s.gcr.io/nvidia-gpu-device-plugin@sha256:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
 ```
 
-k8s.gcr.io/k8s-dns-kube-dns:1.14.13
-k8s.gcr.io/k8s-dns-dnsmasq-nany:1.14.13
-k8s.gcr.io/k8s-dns-sidecar:1.14.13
+docker pull quelle/k8s-dns-kube-dns:1.14.13
+docker pull quelle/k8s-dns-dnsmasq-nany:1.14.13
+docker pull quelle/k8s-dns-sidecar:1.14.13
+
+docker tag quelle/k8s-dns-kube-dns:1.14.13 k8s.gcr.io/k8s-dns-kube-dns:1.14.13
+docker tag quelle/k8s-dns-dnsmasq-nany:1.14.13 k8s.gcr.io/k8s-dns-dnsmasq-nany:1.14.13
+docker tag quelle/k8s-dns-sidecar:1.14.13 k8s.gcr.io/k8s-dns-sidecar:1.14.13
+
+docker save k8s.gcr.io/k8s-dns-kube-dns:1.14.13 k8s.gcr.io/k8s-dns-dnsmasq-nany:1.14.13 k8s.gcr.io/k8s-dns-sidecar:1.14.13 > k8s-dns-1.14.13.tar
 
 ```bash
 k8s.gcr.io/kube-apiserver:v1.14.4
