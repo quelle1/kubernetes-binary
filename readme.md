@@ -7,13 +7,14 @@ kubernetes二进制文件下载及镜像仓库下载；
 kubernetes v1.15.3的镜像，在下载容器`docker pull quelle/kubenetes-download:v1.15.3`时，前面四个都在server里面包含了，只需要下载后面的pause,etcd,coredns，dashboard四个就可以了。
 
 ```bash
-k8s.gcr.io/kube-apiserver:v1.15.3
-k8s.gcr.io/kube-controller-manager:v1.15.3
-k8s.gcr.io/kube-scheduler:v1.15.3
-k8s.gcr.io/kube-proxy:v1.15.3
+k8s.gcr.io/kube-apiserver:v1.16.1
+k8s.gcr.io/kube-controller-manager:v1.16.1
+k8s.gcr.io/kube-scheduler:v1.16.1
+k8s.gcr.io/kube-proxy:v1.16.1
 k8s.gcr.io/pause:3.1
-k8s.gcr.io/etcd:3.3.10
-k8s.gcr.io/coredns:1.3.1
+k8s.gcr.io/etcd:3.3.15-0
+k8s.gcr.io/coredns:1.6.2
+k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 ```
 
 后面四个利用docker pull 对应的镜像就可以下载，然后利用docker tag 命令打标签。
@@ -21,8 +22,8 @@ k8s.gcr.io/coredns:1.3.1
 ```bash
 docker pull quelle/kubernetes-dashboard-amd64:v1.10.1
 docker pull quelle/pause:3.1
-docker pull quelle/k8setcd:3.3.10
-docker pull quelle/coredns:1.3.1
+docker pull quelle/k8setcd:3.3.15-0
+docker pull quelle/coredns:1.6.2
 docker pull quelle/projectcalico-org-cni:v3.3.1
 docker pull quelle/cpvpa-amd64:v0.6.0
 docker pull quelle/projectcalico-org-node:v3.3.1
@@ -30,7 +31,7 @@ docker pull quelle/nvidia-gpu-device-plugin:d18b678437fedc4ec4211c20b3e5469a137a
 docker tag quelle/kubernetes-dashboard-amd64:v1.10.1 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
 docker tag quelle/pause:3.1 k8s.gcr.io/pause:3.1
 docker tag quelle/k8setcd:3.3.10 k8s.gcr.io/etcd:3.3.10
-docker tag quelle/coredns:1.3.1 k8s.gcr.io/coredns:1.3.1
+docker tag quelle/coredns:1.6.2 k8s.gcr.io/coredns:1.6.2
 docker tag quelle/projectcalico-org-cni:v3.3.1  gcr.io/projectcalico-org/cni:v3.3.1
 docker tag quelle/cpvpa-amd64:v0.6.0 k8s.gcr.io/cpvpa-amd64:v0.6.0
 docker tag quelle/projectcalico-org-node:v3.3.1 gcr.io/projectcalico-org/node:v3.3.1
