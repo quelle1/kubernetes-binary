@@ -1,16 +1,16 @@
 # kubernetes二进制文件下载及镜像仓库下载
 
-kubernetes v1.15.3的镜像
+kubernetes v1.15.4的镜像
 
 kubernetes二进制文件下载及镜像仓库下载；
 
-kubernetes v1.15.3的镜像，在下载容器`docker pull quelle/kubenetes-download:v1.15.3`时，前面四个都在server里面包含了，只需要下载后面的pause,etcd,coredns，dashboard四个就可以了。
+kubernetes v1.15.4的镜像，在下载容器`docker pull quelle/kubenetes-download:v1.15.4`时，前面四个都在server里面包含了，只需要下载后面的pause,etcd,coredns，dashboard四个就可以了。
 
 ```bash
-k8s.gcr.io/kube-apiserver:v1.15.3
-k8s.gcr.io/kube-controller-manager:v1.15.3
-k8s.gcr.io/kube-scheduler:v1.15.3
-k8s.gcr.io/kube-proxy:v1.15.3
+k8s.gcr.io/kube-apiserver:v1.15.4
+k8s.gcr.io/kube-controller-manager:v1.15.4
+k8s.gcr.io/kube-scheduler:v1.15.4
+k8s.gcr.io/kube-proxy:v1.15.4
 k8s.gcr.io/pause:3.1
 k8s.gcr.io/etcd:3.3.10
 k8s.gcr.io/coredns:1.3.1
