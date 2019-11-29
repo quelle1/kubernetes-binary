@@ -1,29 +1,29 @@
 # kubernetes download
 FROM ubuntu:16.04
 
-# /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-src.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-darwin-386.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-darwin-amd64.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-386.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-amd64.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-arm.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-arm64.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-ppc64le.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-linux-s390x.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-windows-386.tar.gz /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-client-windows-amd64.tar.gz /root/v1.15.5/
+# /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-src.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-darwin-386.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-darwin-amd64.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-386.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-amd64.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-arm.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-arm64.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-ppc64le.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-linux-s390x.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-windows-386.tar.gz /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-client-windows-amd64.tar.gz /root/v1.15.6/
 
-ADD https://dl.k8s.io/v1.15.5/kubernetes-server-linux-amd64.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-server-linux-arm.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-server-linux-arm64.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-server-linux-ppc64le.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-server-linux-s390x.tar.gz  /root/v1.15.5/
+ADD https://dl.k8s.io/v1.15.6/kubernetes-server-linux-amd64.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-server-linux-arm.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-server-linux-arm64.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-server-linux-ppc64le.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-server-linux-s390x.tar.gz  /root/v1.15.6/
 
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-linux-amd64.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-linux-arm.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-linux-arm64.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-linux-ppc64le.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-linux-s390x.tar.gz  /root/v1.15.5/
-# ADD https://dl.k8s.io/v1.15.5/kubernetes-node-windows-amd64.tar.gz  /root/v1.15.5/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-linux-amd64.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-linux-arm.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-linux-arm64.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-linux-ppc64le.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-linux-s390x.tar.gz  /root/v1.15.6/
+# ADD https://dl.k8s.io/v1.15.6/kubernetes-node-windows-amd64.tar.gz  /root/v1.15.6/
