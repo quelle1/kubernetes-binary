@@ -1,15 +1,15 @@
 # kubernetes二进制文件下载及镜像仓库下载
 
-kubernetes v1.17.2的镜像
+kubernetes v1.17.1的镜像
 
 ```bash
 # kubeadm config images list
 W1129 23:08:30.380172    4109 version.go:101] could not fetch a Kubernetes version from the internet: unable to get URL "https://dl.k8s.io/release/stable-1.txt": Get https://dl.k8s.io/release/stable-1.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
-W1129 23:08:30.380320    4109 version.go:102] falling back to the local client version: v1.17.2
-k8s.gcr.io/kube-apiserver:v1.17.2
-k8s.gcr.io/kube-controller-manager:v1.17.2
-k8s.gcr.io/kube-scheduler:v1.17.2
-k8s.gcr.io/kube-proxy:v1.17.2
+W1129 23:08:30.380320    4109 version.go:102] falling back to the local client version: v1.17.1
+k8s.gcr.io/kube-apiserver:v1.17.1
+k8s.gcr.io/kube-controller-manager:v1.17.1
+k8s.gcr.io/kube-scheduler:v1.17.1
+k8s.gcr.io/kube-proxy:v1.17.1
 k8s.gcr.io/pause:3.1
 k8s.gcr.io/etcd:3.4.3-0
 k8s.gcr.io/coredns:1.6.5
@@ -17,13 +17,13 @@ k8s.gcr.io/coredns:1.6.5
 
 kubernetes二进制文件下载及镜像仓库下载；
 
-kubernetes v1.17.2的镜像，在下载容器`docker pull quelle/kubenetes-download:v1.17.2`时，前面四个都在server里面包含了，只需要下载后面的pause,etcd,coredns，dashboard四个就可以了。
+kubernetes v1.17.1的镜像，在下载容器`docker pull quelle/kubenetes-download:v1.17.1`时，前面四个都在server里面包含了，只需要下载后面的pause,etcd,coredns，dashboard四个就可以了。
 
 ```bash
-k8s.gcr.io/kube-apiserver:v1.17.2
-k8s.gcr.io/kube-controller-manager:v1.17.2
-k8s.gcr.io/kube-scheduler:v1.17.2
-k8s.gcr.io/kube-proxy:v1.17.2
+k8s.gcr.io/kube-apiserver:v1.17.1
+k8s.gcr.io/kube-controller-manager:v1.17.1
+k8s.gcr.io/kube-scheduler:v1.17.1
+k8s.gcr.io/kube-proxy:v1.17.1
 k8s.gcr.io/pause:3.1
 k8s.gcr.io/etcd:3.4.3-0
 k8s.gcr.io/coredns:1.6.5
