@@ -51,6 +51,7 @@ docker tag quelle/k8setcd:3.4.3-0 k8s.gcr.io/etcd:3.4.3-0
 docker tag quelle/coredns:1.6.5 k8s.gcr.io/coredns:1.6.5
 
 docker save k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1 > k8s-dashborad-v1.10.1.tar
+
 docker save k8s.gcr.io/k8s-dns-kube-dns:1.14.13 k8s.gcr.io/k8s-dns-dnsmasq-nanny:1.14.13 k8s.gcr.io/k8s-dns-sidecar:1.14.13 > k8s-dns-1.14.13.tar
 
 docker save k8s.gcr.io/pause:3.1 k8s.gcr.io/etcd:3.4.3-0 k8s.gcr.io/coredns:1.6.5 > k8s-pause-etcd-coredns-v1.17.tar
