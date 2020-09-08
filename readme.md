@@ -16,6 +16,7 @@ k8s.gcr.io/kube-proxy:v1.14.9
 k8s.gcr.io/pause:3.1
 k8s.gcr.io/etcd:3.3.10
 k8s.gcr.io/coredns:1.3.1
+k8s.gcr.io/metrics-server-amd64:v0.3.1
 ```
 
 后面四个利用docker pull 对应的镜像就可以下载，然后利用docker tag 命令打标签。
@@ -37,6 +38,10 @@ docker tag quelle/projectcalico-org-cni:v3.3.1  gcr.io/projectcalico-org/cni:v3.
 docker tag quelle/cpvpa-amd64:v0.6.0 k8s.gcr.io/cpvpa-amd64:v0.6.0
 docker tag quelle/projectcalico-org-node:v3.3.1 gcr.io/projectcalico-org/node:v3.3.1
 docker tag quelle/nvidia-gpu-device-plugin:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4 k8s.gcr.io/nvidia-gpu-device-plugin@sha256:d18b678437fedc4ec4211c20b3e5469a137a44f989da43dc275e4f2678170db4
+
+docker pull quelle/metrics-server-amd64:v0.3.1 
+docker tag quelle/metrics-server-amd64:v0.3.1  k8s.gcr.io/metrics-server-amd64:v0.3.1
+docker save k8s.gcr.io/metrics-server-amd64:v0.3.1 > metrics-server-amd64_v0.3.1.tar
 
 docker pull quelle/k8s-dns-kube-dns:1.14.13
 docker pull quelle/k8s-dns-dnsmasq-nany:1.14.13
